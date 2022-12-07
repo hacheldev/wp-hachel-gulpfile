@@ -1,0 +1,45 @@
+{
+	"externalLibrary": [
+		{
+			"name": "library1",
+			"src": "./node_modules/library1/library1.min.js",
+			"dest": "./wp-content/themes/wptheme/assets/js",
+			"single": true
+		},
+		{
+			"name": "library2",
+			"src": "./node_modules/library2/**/*",
+			"dest": "./wp-content/themes/wptheme/assets/library2"
+		},
+		{
+			"name": "library3",
+			"src": [
+				"./node_modules/library3/dir1",
+				"./node_modules/library3/dir2"
+			],
+			"dest": "./wp-content/themes/wptheme/library3"
+		}
+	],
+	"stylesFiles": [
+		{
+			"name": "wptheme",
+			"src": "./wp-content/themes/wptheme/src/scss/**/*.scss",
+			"dest": "./wp-content/themes/wptheme/assets/css"
+		}
+	],
+	"scriptsFiles": [
+		{
+			"name": "wptheme",
+			"src": "./wp-content/themes/wptheme/src/js/*.js",
+			"dest": "./wp-content/themes/wptheme/assets/js"
+		}
+	],
+	"makepotFiles": [
+		{
+			"src": "./wp-content/themes/wptheme/**/*.php",
+			"domain": "wptheme",
+			"package": "WpTheme",
+			"dest": "./wp-content/themes/wptheme/languages"
+		}
+	]
+}
